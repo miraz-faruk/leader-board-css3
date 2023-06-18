@@ -1,4 +1,29 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Manrope&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
+
+/* common styles or utilities */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F3F1FF;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+}
+
 /* Top player and top blog section styles */
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+}
+
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,4 +37,8 @@
 .player img {
     width: 56px;
     height: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
 }
