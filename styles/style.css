@@ -1,6 +1,15 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Manrope&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Manrope&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Manrope&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Manrope&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Manrope&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+
 /* common styles or utilities */
 body {
     font-family: 'Poppins', sans-serif;
@@ -97,4 +106,96 @@ hr {
     text-decoration: none;
     color: #562EFF;
     font-size: 16px;
+}
+
+/* Latest course section styles */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course{
+    width: 256px;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+}
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20.0336px;
+    color: #1E1E1E;
+}
+
+.course-author {
+    font-size: 14.6913px;
+    font-family: 'Roboto', sans-serif;
+    color: #ED6B4F;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.course-duration {
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    color: #FF4A60;
+    font-size: 14.6913px;
+    padding: 4px 6.5px 5.5px 5.5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Media Queries for Mobile*/
+
+@media screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+
+    .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog, .course{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Media Queries for Tablet*/
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    } 
 }
